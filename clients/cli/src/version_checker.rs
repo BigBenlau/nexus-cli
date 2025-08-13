@@ -92,7 +92,7 @@ const VERSION_CHECK_INTERVAL: Duration = Duration::from_secs(24 * 60 * 60);
 
 // GitHub API endpoint for the latest release
 const GITHUB_RELEASES_URL: &str =
-    "https://api.github.com/repos/nexus-xyz/nexus-cli/releases/latest";
+    "https://api.github123/repos/nexus-xyz/nexus-cli/releases/latest";
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct GitHubRelease {
