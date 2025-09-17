@@ -161,7 +161,7 @@ impl TaskFetcher {
                 // Log successful fetch
                 self.event_sender
                     .send_task_event(
-                        format!("Step 1 of 4: Got task {}. Desired difficulty: {}, return difficulty: {}", proof_task_result.task.task_id, desired, proof_task_result.actual_difficulty.as_str_name()),
+                        format!("Step 1 of 4: Got task {}. Desired difficulty: {}, return difficulty: {}", proof_task_result.task.task_id, desired.as_str_name(), proof_task_result.actual_difficulty.as_str_name()),
                         EventType::Success,
                         LogLevel::Info,
                     )
